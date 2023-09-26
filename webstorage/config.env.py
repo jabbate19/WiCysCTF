@@ -13,3 +13,4 @@ SQLALCHEMY_TRACK_MODIFICATIONS = 'False'
 JWT_SECRET = 'starwars'
 
 SECRET_KEY = urandom(32)
+

@@ -12,3 +12,4 @@ ADD . /opt/webstorage
 
 ENTRYPOINT ["gunicorn", "webstorage:app"]
 CMD ["--bind=0.0.0.0:8080", "--access-logfile=-"]
+

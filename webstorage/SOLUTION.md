@@ -16,3 +16,4 @@ Weak JSON Web Token (JWT) signing key allows attacker to change data (username) 
 - You can use this to create your own valid JWT using sites above
 - On the main page once logged in, you can see `admin` is logged in, so make your username `admin`
 - Enter this new JWT as your auth cookie, refresh, and you should be admin with the flag
+
