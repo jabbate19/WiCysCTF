@@ -1,0 +1,44 @@
+{% extends "layout.html" %} {% block content %}
+<div class="jumbotron">
+  <div class="bs-component">
+    <hr class="my-4">
+    <div class="container">
+      <h1>Hello {{username}}!</h1>
+
+      <h2>Your Notes</h2>
+      <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Content</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for note in notes %}
+            <tr>
+                <th scope="row">{{ note.key }}</th>
+                <td>{{ note.content }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+      <h2>Recent Logins</h2>
+      <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ username }}</td>
+            </tr>
+            <tr>
+              <td>admin</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,43 @@
+.fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    top: 0;
+}
+
+.navbar-expand-lg {
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.navbar, .navbar>.container, .navbar>.container-fluid {
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    padding: .5rem 1rem;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+article, aside, div, footer, header, hgroup, main, nav, section {
+    display: block;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+body {
+    padding-top: 60px;
+}
